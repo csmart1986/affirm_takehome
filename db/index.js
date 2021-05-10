@@ -39,6 +39,7 @@ export const Schedule = ScheduleModel(sequelize);
           name: "Zelda's Stationary",
           minimum_loan_amount: 100.00,
           maximum_loan_amount: 3000.00,
+          prequal_enabled: false,
         });
         ManualOverride.create({
           ssn: '987-65-4321',
