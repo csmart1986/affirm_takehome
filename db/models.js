@@ -81,11 +81,17 @@ export const MerchantConfigurationModel = (sequelize) => sequelize.define('Merch
   minimum_loan_amount: {
     type: DataTypes.DECIMAL(10, 2),
     allowNull: true,
+    min: 0
   },
   maximum_loan_amount: {
     type: DataTypes.DECIMAL(10, 2),
     allowNull: true,
+    min: 0
   },
+  prequal_enabled: {
+    type: DataTypes.BOOLEAN,
+    allowNull: false,
+  }
 });
 
 /*
