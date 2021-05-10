@@ -1,0 +1,32 @@
+{
+  "name": "loan-application-translation-support",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./app.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "npx babel-node ./www.js",
+    "lint": "npx eslint --ext .js --fix ./"
+  },
+  "author": "Affirm",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.6",
+    "enum": "^3.0.4",
+    "express": "^4.17.1",
+    "http-errors": "~1.6.3",
+    "morgan": "^1.10.0",
+    "sequelize": "^6.5.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb": "^18.2.1"
+  }
+}
