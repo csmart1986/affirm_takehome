@@ -72,7 +72,6 @@ export const MerchantConfigurationModel = (sequelize) => sequelize.define('Merch
   merchant_id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
-    //autoIncrement: true,
   },
   name: {
     type: DataTypes.STRING,
