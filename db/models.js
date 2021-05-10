@@ -86,7 +86,12 @@ export const MerchantConfigurationModel = (sequelize) => sequelize.define('Merch
   maximum_loan_amount: {
     type: DataTypes.DECIMAL(10, 2),
     allowNull: true,
-    min: 0
+    min: 0,
+    isGreaterThanMinLoan(value) {
+      if (value !== null && this.minimum_loan_amount !== null && value < this.minimum_loan_amount) {
+        throw new Error('maximum_loan_amount must be greater than minimum_loan_amount.');
+      }
+    }
   },
   prequal_enabled: {
     type: DataTypes.BOOLEAN,
