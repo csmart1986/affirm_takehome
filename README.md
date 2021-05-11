@@ -1,5 +1,7 @@
 # Catherine Martin's Submission for Affirm's Take Home Assignment
 
+Please click on the wiki associated with this repo to see my notes on my design decisions along with future improvements/extensions. 
+
 # Node.js Specific Instructions
 
 
