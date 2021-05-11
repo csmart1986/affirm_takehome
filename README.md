@@ -2,6 +2,8 @@
 
 Please click on the wiki associated with this repo to see my notes on my design decisions along with future improvements/extensions. 
 
+I completed this assignment in JavaScript.
+
 # Node.js Specific Instructions
 
 
