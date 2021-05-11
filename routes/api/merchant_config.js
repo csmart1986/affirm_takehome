@@ -41,7 +41,7 @@ router.post('/', async (req,res, next) => {
                     res.status(200).send(result);
                 } catch (error) {
                     // attempt to add the merchant configs to database failed
-                    res.status(400).send('Request failed.  Merchant configs were unable to be added to database')
+                    res.status(200).send('Request failed.  Merchant configs were unable to be added to database')
                 }
             }
         } catch(error) {
